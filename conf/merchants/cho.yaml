@@ -1,0 +1,57 @@
+merchant: cho
+
+feed:
+  url: https://feeds.performancehorizon.com/aisl3/1101l163/3049cedf77540e17e928d94d7ea2cc3d.zip
+  compression: zip
+
+id: COLOR
+
+codes: {}
+
+column_map:
+  TITLE: product_name
+  DESCRIPTION: description
+  IMAGE: image_url
+  BRAND: brand
+  PRODUCT TYPE: category
+  GENDER: gender
+  AGE GROUP: age
+  PRICE: price
+  MPN: merchant_sku
+  SIZE: size
+  COLOR: color
+
+filters:
+  col: PRODUCT TYPE
+  include:
+    - Footwear > Womens Shoes, Boots & Trainers
+    - Footwear > Mens Shoes, Boots & Trainers
+    - Footwear > Mens Shoes, Boots & Trainers > Trainers
+    - Footwear > Womens Shoes, Boots & Trainers > Flat Sandals
+    - Footwear > Womens Shoes, Boots & Trainers > Slippers
+    - Footwear > Womens Wellies
+    - Footwear > Mens Shoes, Boots & Trainers > Slippers
+    - Footwear > Mens Shoes, Boots & Trainers > Sandals
+    - Footwear > Womens Wellies > Short Wellingtons
+    - Footwear > Womens Wellies > Tall Wellingtons
+    - Footwear > Mens Shoes, Boots & Trainers > Casual Shoes
+    - Footwear > Mens Wellies
+    - Footwear > Mens Wellies > Tall Wellingtons
+    - Footwear > Womens Shoes, Boots & Trainers > Chelsea Boots
+    - Footwear > Womens Shoes, Boots & Trainers > Flat Shoes
+    - Footwear
+    - Footwear > Mens Shoes, Boots & Trainers > Chukka Boots
+    - Footwear > Womens Shoes, Boots & Trainers > Flat Boots
+    - Footwear > Mens Wellies > Short Wellingtons
+    - Footwear > Mens Shoes, Boots & Trainers > Chelsea Boots
+    - Footwear > Womens Shoes, Boots & Trainers > Ankle Boots
+    - Footwear > Womens Shoes, Boots & Trainers > Wedges
+    - Footwear > Mens Shoes, Boots & Trainers > Flip Flops
+    - Footwear > Mens Shoes, Boots & Trainers > Brogue Shoes
+    - Footwear > Mens Shoes, Boots & Trainers > Loafer
+
+groupby: id
+
+code:
+  - ID
+  - GTIN

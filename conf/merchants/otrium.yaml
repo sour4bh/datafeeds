@@ -1,0 +1,34 @@
+merchant: otrium
+
+feed:
+  url: https://feeds.performancehorizon.com/aisl3/1100l5382/3980598efef8b5571d99e7a14f8fce52.csv.zip
+  compression: zip
+
+id: item_group_id
+
+codes: {}
+
+column_map:
+  item_group_id: merchant_sku
+  product_name: product_name
+  product_brand: brand
+  product_image: image_url
+  google_product_category: category
+  product_price: price
+  product_description: description
+  gender: gender
+  size: size
+
+filters:
+  col: google_product_category
+  include:
+    - Clothing & Accessories > Shoes
+
+groupby: item_group_id
+
+code:
+  - item_group_id
+  - product_id
+  - GTIN
+  - EAN
+  - MPN

@@ -1,0 +1,35 @@
+merchant: vrnts
+
+feed:
+  url: https://www.webgains.com/affiliates/datafeed.html?action=download&campaign=1432455&feeds=7183&categories=1555,1777,8721,19969,21667&fields=extended&fieldIds=category_id,category_name,category_path,deeplink,description,image_url,last_updated,merchant_category,price,product_id,product_name,program_id,program_name,additional_image_2,brand,Colour,currency,delivery_cost,delivery_period,display_price,embargo,european_article_number,expiry,gender,image_large_url,image_thumbnail_url,image_url,in_stock,language,manufacturers_product_number,promotion_details,recommended_retail_price,short_description,size,stock_level&format=csv&separator=comma&zipformat=gzip_notar&stripNewlines=0&apikey=016c05169481694898b748fea891819e
+  compression: gzip
+
+id: manufacturers_product_number
+
+codes:
+  manufacturers_product_number: style_code
+  european_article_number: gtin
+
+column_map:
+  product_name: product_name
+  description: description
+  category_path: category
+  price: price
+  brand: brand
+  size: size
+  gender: gender
+  manufacturers_product_number: merchant_sku
+  image_url: image_url
+  Colour: color
+
+filters:
+  col: category_name
+  include:
+    - NIKE
+    - Shoes
+
+groupby: manufacturers_product_number
+
+code:
+  - european_article_number
+  - manufacturers_product_number

@@ -1,0 +1,34 @@
+merchant: deichmann
+
+feed:
+  url: https://www.webgains.com/affiliates/datafeed.html?action=download&campaign=1432455&feeds=4059&categories=1938,1977,1988,1,24,25,19988,19989,1555,9454,8527,1573,1620,1673,1679,1680,1741,20145,20146,20150,20147,1777,8723,8721,8725,19969,20115,1792,8722,8729,8730,20111,422,505,517&fields=extended&fieldIds=category_id,category_name,category_path,deeplink,description,image_url,last_updated,merchant_category,price,product_id,product_name,program_id,program_name,currency,delivery_cost,european_article_number,Fabric,image_url,manufacturer,short_description,size,stock_level&format=csv&separator=comma&zipformat=gzip_notar&stripNewlines=0&apikey=016c05169481694898b748fea891819e
+  compression: gzip
+
+id: product_id
+
+codes: {}
+
+column_map:
+  product_name: product_name
+  category_name: category
+  price: price
+  product_id: merchant_sku
+  manufacturer: brand
+  description: description
+  size: size
+  image_url: image_url
+  Fabric: material
+
+filters:
+  col: category_name
+  include:
+    - Shoes
+    - Sandals
+    - Boots
+    - Trainers & Running Shoes
+
+groupby: null
+
+code:
+  - product_id
+  - european_article_number

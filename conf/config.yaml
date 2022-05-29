@@ -105,98 +105,108 @@ pid:
 filter:
     allsole:
         col: category_name
-        vals:
+        include:
             - "Women's Footwear"
             - "Men's Footwear"
             # - "Children's Footwear"
+
     asos:
         col: category_name
-        vals:
+        include:
             - "Women's Footwear"
             - "Men's Footwear"
+
     begg_shoes:
         col: category_name
-        vals:
+        include:
             - "Shoes"
             - "Sandals"
             - "Boots"
             # - "Children's Shoes"
             - "Trainers & Running Shoes"
+
     blue_tomato:
         col: category_name
-        vals:
-            - "Shoes"
+        include: "Shoes"
+
     camper:
         col: merchant_product_category_path
-        vals:
+        include:
             - "Clothing & Accessories > Shoes"
             - "Clothing & Accessories > Shoes > Sandals"
             - "Clothing & Accessories > Shoes > Boots"
     coggles:
         col: category_name
-        vals:
+        include:
             - "Shoes"
             - "Boots"
             - "Women's Footwear"
             - "Men's Footwear"
             # - "Children's Footwear"
+
     converse:
         col: category_name
-        vals:
+        include:
             - "Shoes"
             - "Women's Footwear"
             - "Men's Footwear"
             # - "Children's Footwear"
+
     deichmann:
         col: category_name
-        vals:
+        include:
             - "Shoes"
             - "Sandals"
             - "Boots"
             # - "Children's Shoes"
             - "Trainers & Running Shoes"
+
     eqvvs_women:
         col: category_name
-        vals:
-            - "Women's Footwear"
+        include: "Women's Footwear"
+
     eqvvs:
         col: category_name
-        vals:
-            - "Shoes"
+        include: "Shoes"
+
     footasylum:
         col: category_name
-        vals:
+        include:
             - "Men's Footwear"
             - "Women's Footwear"
             # - "Children's Footwear"
+
     foot_locker:
         col: category_name
-        vals:
-            - "Shoes"
+        include: "Shoes"
+
     hip:
         col: merchant_category
-        vals:
+        include:
             - "Men's Footwear"
             - "Women's Footwear"
+
     hoka:
         col: category_name
-        vals:
+        include:
             - "Shoes"
             - "Women's Footwear"
             - "Men's Footwear"
+
     inov8:
         col: category_name
-        vals:
-            - "Shoes"
+        include: "Shoes"
+
     jd_sports:
         col: category_name
-        vals:
+        include:
             - "Women's Footwear"
             - "Men's Footwear"
             # - "Children's Footwear"
+
     kappa:
         col: merchant_product_category_path
-        vals:
+        include:
             # - "KAPPA > Kid > Shoes > Lifestyle"
             - "KAPPA > Women > Shoes > Lifestyle"
             # - "KAPPA > Kid > Shoes > Sneakers"
@@ -208,63 +218,70 @@ filter:
             # - "KAPPA > Kid > Shoes > Sliders & flip flops"
             - "KAPPA > Men > Shoes > Training"
             - "KAPPA > Women > Shoes > Training"
+
     klekt:
         col: category_name
-        vals:
+        include:
             - "Sneakers"
+
     new_balance:
         col: category_name
-        vals:
+        include:
             - "Men's Footwear"
             - "Women's Footwear"
             # - "Children's Footwear"
+
     nike:
         col: merchant_product_second_category
-        vals:
+        include:
             - "Men's Shoes"
             - "Unisex Shoes"
             - "Women's Shoes"
             # - "Children's Shoes"
+
     office:
         col: category_name
-        vals:
+        include:
             - "Shoes"
             - "Women's Footwear"
             - "Men's Footwear"
+
     offspring:
         col: category_name
-        vals:
+        include:
             - "Shoes"
             # - "Children's Footwear"
     schuh:
         col: category_name
-        vals:
+        include:
             - "Men's Footwear"
             - "Women's Footwear"
             # - "Children's Footwear"
     scotts:
         col: category_name
-        vals:
+        include:
             - "Men's Footwear"
             - "Women's Footwear"
     secret_sales:
         col: category_name
-        vals:
-            - "Shoes"
+        include: "Shoes"
+
     slam_jam:
         col: merchant_category
-        vals:
+        include:
             - "Sneakers"
             - "Sandals and Slides"
             - "Boots"
             - "Classic Shoes"
+
     standout:
         col: category_name
-        vals:
+        include:
             - "Men's Footwear"
+
     studio:
         col: merchant_category
-        vals:
+        include:
             - "Fashion - Womens > Womens Footwear > Womens Shoes"
             - "Fashion - Womens > Womens Footwear > Womens Boots"
             - "Fashion - Womens > Womens Footwear > Womens Trainers"
@@ -278,53 +295,62 @@ filter:
             # - "Fashion - Girls > Girls Footwear > Girls Boots"
             # - "Fashion - Boys > Boys Footwear > Boys Boots"
             # - "Fashion - Babies > Babies Footwear"
+
     tessuti:
         col: merchant_category
-        vals:
+        include:
             - "Men's Footwear"
             - "Women's Footwear"
             # - "Children's Footwear"
+
     the_sports_edit:
         col: merchant_category
-        vals:
+        include:
             - "Mens > Shoes >Neutral"
             - "Womens > Shoes > Neutral"
+
     vrnts:
         col: category_name
-        vals:
+        include:
             - "NIKE"
             - "Shoes"
+
     #batch1
     choice:
         col: merchant_category
-        vals:
+        include:
             - "Men's Footwear"
             - "Women's Footwear"
+
     ellesse:
         col: merchant_category
-        vals:
+        include:
             - "Pentland Footwear > Apparel > Footwear"
             - "Pentland Footwear > Apparel > Clothing"
+
     footpatrol:
         col: merchant_category
-        vals:
+        include:
             - "Men's Footwear"
             - "Women's Footwear"
             # - "Children's Footwear"
+
     sevenstore:
         col: category_name
-        vals:
+        include:
             - "Men's Footwear"
             - "Women's Footwear"
+
     size:
         col: category_name
-        vals:
+        include:
             - "Men's Footwear"
             - "Women's Footwear"
             # - "Children's Footwear"
+
     stuarts:
         col: merchant_category
-        vals:
+        include:
             - "Men&#039;s Footwear"
             - "Women&#039;s Footwear > Women&#039;s Sandals"
             - "Men&#039;s Footwear > Shoe Accessories"
@@ -352,46 +378,51 @@ filter:
             - "Women&#039;s Footwear > Women&#039;s Sneakers"
             - "Women&#039;s Footwear > Women&#039;s Boots"
             - "Women&#039;s Footwear"
+
     tower_london:
         col: merchant_category
-        vals:
+        include:
             - "Clothing & Accessories > Shoes"
-        # col2: 
-        # vals2:
+
     under_armour:
         col: custom_7
-        vals:
-            - footwear
+        include: footwear
+
     very:
         col: merchant_category
-        vals:
+        include:
             - "Men's Footwear"
             - "Women's Footwear"
             # - "Children's Footwear"-
+
     stadium_goods:
-        col: google_product_category
-        vals:
-            - "Apparel & Accessories > Shoes"
-        col2: age_group
-        vals2:
-            - "Adult"
+        - col: google_product_category
+          include:
+              - "Apparel & Accessories > Shoes"
+        - col: age_group
+          include:
+              - "Adult"
+
     reebok:
         col: Product Category
-        vals:
+        include:
             - "Shoes&amp;Trainers"
             - "Shoes&amp;Sport Shoes,Trainers"
             - "Shoes&amp;Sport Shoes"
             - "Shoes&amp;Sliders &amp; Flip Flops"
             - "Shoes&amp;Sliders &amp; Flip Flops,Sport Shoes,Trainers"
+
     daniel_footwear:
         col: google_product_category
-        vals: ["Clothing & Accessories > Shoes"]
+        include: ["Clothing & Accessories > Shoes"]
+
     otrium:
         col: google_product_category
-        vals: ["Clothing & Accessories > Shoes"]
+        include: ["Clothing & Accessories > Shoes"]
+
     mr_porter:
         col: Product Category
-        vals:
+        include:
             - "Shoes > Sneakers > Low Top Sneakers"
             - "Shoes > Suede Shoes > Suede Sneakers"
             - "Shoes > Sneakers > Luxury Sneakers"
@@ -399,16 +430,17 @@ filter:
             - "Shoes > Sneakers > Slip-On Sneakers"
     brother2brother:
         col: PRODUCT TYPE
-        vals:
+        include:
             - "Men > Footwear > Trainers"
             - "Men > Footwear > Sliders"
             - "Men > Footwear > Boots"
             - "Men > Footwear > Casual Shoes"
             - "Men > Footwear > Sandals"
             - "Men > Footwear"
+
     cho:
         col: PRODUCT TYPE
-        vals:
+        include:
             - "Footwear > Womens Shoes, Boots & Trainers"
             - "Footwear > Mens Shoes, Boots & Trainers"
             - "Footwear > Mens Shoes, Boots & Trainers > Trainers"
@@ -434,9 +466,10 @@ filter:
             - "Footwear > Mens Shoes, Boots & Trainers > Flip Flops"
             - "Footwear > Mens Shoes, Boots & Trainers > Brogue Shoes"
             - "Footwear > Mens Shoes, Boots & Trainers > Loafer"
+
     excell_sports:
         col: PRODUCT TYPE
-        vals:
+        include:
             - "Sport > Running > Running Footwear"
             - "Men > Footwear > Men's Trainers"
             - "Women > Footwear > Women's Trainers"

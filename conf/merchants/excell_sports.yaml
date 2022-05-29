@@ -1,0 +1,42 @@
+merchant: excell_sports
+
+feed:
+  url: https://feeds.performancehorizon.com/aisl3/1100l944/2a0a29f0760f1a96cc0bf9bb513fbb3e.csv.zip
+  compression: zip
+
+id: LINK
+
+codes: {}
+
+column_map:
+  TITLE: product_name
+  DESCRIPTION: description
+  PRODUCT TYPE: category
+  IMAGE: image_url
+  BRAND: brand
+  PRICE: price
+  SIZE: size
+  MPN: merchant_sku
+  COLOR: color
+
+filters:
+  col: PRODUCT TYPE
+  include:
+    - Sport > Running > Running Footwear
+    - Men > Footwear > Men's Trainers
+    - Women > Footwear > Women's Trainers
+    - Sport > Football > Football Boots
+    - Sport > Training & Fitness > Gym Trainers
+    - Men > Footwear > Men's Trainers
+    - Women > Footwear > Women's Trainers
+    - Men > Footwear
+    - Men > Footwear > Men's Walking Shoes
+    - Women > Footwear > Womens Slides & Sandals
+    - Men > Footwear > Men's Sandles & Slides
+
+groupby: id
+
+code:
+  - ID
+  - MPN
+  - GTIN

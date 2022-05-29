@@ -1,0 +1,35 @@
+merchant: daniel_footwear
+
+feed:
+  url: https://feeds.performancehorizon.com/aisl3/1011l507/d48ae7b76562ecccdc4d4f4471753076.csv.zip
+  compression: zip
+
+id: item_group_id
+
+codes:
+  gtin: gtin
+
+column_map:
+  title: product_name
+  description: description
+  image_link: image_url
+  brand: brand
+  product_type: category
+  gender: gender
+  size: size
+  age_group: age
+  price: price
+  mpn: merchant_sku
+  color: color
+  material: material
+  pattern: pattern
+
+filters:
+  col: google_product_category
+  include: Clothing & Accessories > Shoes
+
+groupby: id
+
+code:
+  - item_group_id
+  - gtin

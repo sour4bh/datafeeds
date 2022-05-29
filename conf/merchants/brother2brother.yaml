@@ -1,0 +1,38 @@
+merchant: brother2brother
+
+feed:
+  url: https://feeds.performancehorizon.com/aisl3/1011l192/aa6f9596aa69c9d3876c98ef2760b387.zip
+  compression: zip
+
+id: LINK
+
+codes: {}
+
+column_map:
+  TITLE: product_name
+  DESCRIPTION: description
+  PRODUCT TYPE: category
+  IMAGE: image_url
+  BRAND: brand
+  PRICE: price
+  GENDER: gender
+  AGE GROUP: age
+  SIZE: size
+  MPN: merchant_sku
+  COLOR: color
+
+filters:
+  col: PRODUCT TYPE
+  include:
+    - Men > Footwear > Trainers
+    - Men > Footwear > Sliders
+    - Men > Footwear > Boots
+    - Men > Footwear > Casual Shoes
+    - Men > Footwear > Sandals
+    - Men > Footwear
+
+groupby: id
+
+code:
+  - ID
+  - GTIN

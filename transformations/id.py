@@ -46,15 +46,15 @@ def make_offer_id(offer_id, merchant_name):
 
 
 class IDRules:
-    def __init__(self, config, merchant):
-        self.config = config
+    def __init__(self, pid_col, merchant):
+        self.pid_col = pid_col
         self.merchant = merchant
 
     def __call__(self, row):
         if hasattr(self, self.merchant):
             return getattr(self, self.merchant)(row)
         else:
-            return make_offer_id(row[self.config.pid[self.merchant]], self.merchant)
+            return make_offer_id(row[self.pid_col], self.merchant)
 
     def nike(self, row):
         return make_offer_id(

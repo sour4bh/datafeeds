@@ -1,0 +1,37 @@
+merchant: stadium_goods
+
+feed:
+  url: https://feeds.performancehorizon.com/aisl3/1011l4599/6b557b22db3272c96bb0c7d1950a4fbc.csv.zip
+  compression: zip
+
+id: item_group_id
+
+codes: {}
+
+column_map:
+  title: product_name
+  google_product_category: category
+  item_group_id: merchant_sku
+  Image_link: image_url
+  price: price
+  gender: gender
+  age_group: age
+  size: size
+  brand: brand
+  color: color
+  material: material
+
+filters:
+  - col: google_product_category
+    include:
+      - Apparel & Accessories > Shoes
+  - col: age_group
+    include:
+      - Adult
+
+groupby: item_group_id
+
+code:
+  - item_group_id
+  - mpn
+  - gtin

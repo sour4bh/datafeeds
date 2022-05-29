@@ -1,0 +1,40 @@
+merchant: mr_porter
+
+feed:
+  url: https://feeds.performancehorizon.com/aisl3/1100l548/15ecabf669ce81dda9e726a077bfb11d.csv.zip
+  compression: zip
+
+id: item_group_id
+
+codes: {}
+
+column_map:
+  age_group: age
+  brand: brand
+  description: description
+  gender: gender
+  item_group_id: merchant_sku
+  Product Image: image_url
+  Product Value: price
+  Product Category: category
+  size: size
+  Product Name: product_name
+  color: color
+  material: material
+
+filters:
+  col: Product Category
+  include:
+    - Shoes > Sneakers > Low Top Sneakers
+    - Shoes > Suede Shoes > Suede Sneakers
+    - Shoes > Sneakers > Luxury Sneakers
+    - Shoes > Sneakers > High Top Sneakers
+    - Shoes > Sneakers > Slip-On Sneakers
+
+groupby: item_group_id
+
+code:
+  - gtin
+  - item_group_id
+  - Product ID
+  - mpn

@@ -1,0 +1,39 @@
+merchant: reebok
+
+feed:
+  url: https://feeds.performancehorizon.com/aisl3/1011l899/8107783031b78b144175f38046882597.csv.zip
+  compression: zip
+
+id: Product ID
+variant: mpn
+
+codes: {}
+
+column_map:
+  Product Name: product_name
+  Product Category: category
+  mpn: merchant_sku
+  Product Image URL: image_url
+  old_price: price
+  gender: gender
+  brand: brand
+  description: description
+  size: size
+  color: color
+  custom_type: purpose
+
+filters:
+  col: Product Category
+  include:
+    - Shoes&amp;Trainers
+    - Shoes&amp;Sport Shoes,Trainers
+    - Shoes&amp;Sport Shoes
+    - Shoes&amp;Sliders &amp; Flip Flops
+    - Shoes&amp;Sliders &amp; Flip Flops,Sport Shoes,Trainers
+
+groupby: id
+
+code:
+  - Product ID
+  - EAN
+  - upc

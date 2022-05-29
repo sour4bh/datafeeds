@@ -1,0 +1,31 @@
+merchant: klekt
+
+feed:
+  url: https://www.webgains.com/affiliates/datafeed.html?action=download&campaign=1432455&feeds=21615&categories=1555,1777&fields=extended&fieldIds=category_id,category_name,category_path,deeplink,description,image_url,last_updated,merchant_category,price,product_id,product_name,program_id,program_name,best_sellers,brand,currency,delivery_cost,delivery_period,gender,image_url,manufacturers_product_number,size,stock_level&format=csv&separator=comma&zipformat=gzip_notar&stripNewlines=0&apikey=016c05169481694898b748fea891819e
+  compression: gzip
+
+id: manufacturers_product_number
+
+codes:
+  manufacturers_product_number: style_code
+
+column_map:
+  product_name: product_name
+  category_name: category
+  description: description
+  price: price
+  brand: brand
+  manufacturers_product_number: merchant_sku
+  gender: gender
+  size: size
+  image_url: image_url
+
+filters:
+  col: category_name
+  include: Sneakers
+
+groupby: manufacturers_product_number
+
+code:
+  - product_id
+  - manufacturers_product_number
