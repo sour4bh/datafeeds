@@ -7,7 +7,7 @@ feed:
 id: mpn
 
 codes:
-  mpn: style_code
+  mpn: style
   product_GTIN: gtin
 
 column_map:
@@ -33,7 +33,5 @@ filters:
 groupby: mpn
 
 code:
-  - custom_1
-  - ean
-  - mpn
-  - product_GTIN
+  - product_GTIN # gtin - ean
+  - mpn #style

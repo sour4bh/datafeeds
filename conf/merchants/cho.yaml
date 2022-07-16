@@ -6,7 +6,8 @@ feed:
 
 id: COLOR
 
-codes: {}
+codes:
+  GTIN: gtin
 
 column_map:
   TITLE: product_name
@@ -53,5 +54,4 @@ filters:
 groupby: id
 
 code:
-  - ID
-  - GTIN
+  - GTIN #gtin

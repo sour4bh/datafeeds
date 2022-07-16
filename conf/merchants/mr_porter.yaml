@@ -6,7 +6,8 @@ feed:
 
 id: item_group_id
 
-codes: {}
+codes:
+  gtin: gtin
 
 column_map:
   age_group: age
@@ -35,6 +36,3 @@ groupby: item_group_id
 
 code:
   - gtin
-  - item_group_id
-  - Product ID
-  - mpn

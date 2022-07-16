@@ -6,7 +6,9 @@ feed:
 
 id: item_group_id
 
-codes: {}
+codes:
+  mpn: style
+  gtin: gtin
 
 column_map:
   title: product_name
@@ -32,6 +34,5 @@ filters:
 groupby: item_group_id
 
 code:
-  - item_group_id
-  - mpn
-  - gtin
+  - mpn # style
+  - gtin #gtin

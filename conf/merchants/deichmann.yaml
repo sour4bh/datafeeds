@@ -30,5 +30,4 @@ filters:
 groupby: null
 
 code:
-  - product_id
   - european_article_number

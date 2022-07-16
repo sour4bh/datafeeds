@@ -6,7 +6,8 @@ feed:
 
 id: merchant_deep_link
 
-codes: {}
+codes:
+  product_GTIN: gtin
 
 column_map:
   product_name: product_name
@@ -31,6 +32,6 @@ filters:
 groupby: id
 
 code:
-  - merchant_product_id
-  - model_number
-  - product_GTIN
+  # - merchant_product_id #gtin
+  # - model_number #gtin 
+  - product_GTIN #gtin

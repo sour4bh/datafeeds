@@ -8,6 +8,7 @@ id: model_number
 
 codes:
   custom_1: gtin
+  model_number: jd
 
 column_map:
   product_name: product_name
@@ -32,6 +33,5 @@ filters:
 groupby: model_number
 
 code:
-  - merchant_product_id
+  - custom_1 # gtin # - merchant_product_id 
   - model_number
-  - custom_1

@@ -7,7 +7,8 @@ feed:
 id: merchant_deep_link
 variant: keywords
 
-codes: {}
+codes:
+  ean: gtin
 
 column_map:
   product_name: product_name
@@ -30,8 +31,4 @@ filters:
 groupby: null
 
 code:
-  - merchant_product_id
-  - model_number
-  - ean
-  - mpn
-  - parent_product_id
+  - ean #gtin

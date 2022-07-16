@@ -6,7 +6,8 @@ feed:
 
 id: parent_product_id
 
-codes: {}
+codes:
+  mpn: style
 
 column_map:
   product_name: product_name
@@ -53,8 +54,4 @@ filters:
 groupby: parent_product_id
 
 code:
-  - merchant_product_id
-  - custom_1
-  - custom_2
   - mpn
-  - parent_product_id

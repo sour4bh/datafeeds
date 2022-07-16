@@ -7,7 +7,7 @@ feed:
 id: mpn
 
 codes:
-  mpn: style_code
+  mpn: style
   ean: gtin
 
 column_map:
@@ -19,7 +19,6 @@ column_map:
   brand_name: brand
   Fashion:size: size
   display_price: price
-  product_price_old: product_price_old
   merchant_image_url: image_url
   colour: color
   Fashion:material: material
@@ -31,7 +30,5 @@ filters:
 groupby: parent_product_id
 
 code:
-  - merchant_product_id
-  - ean
-  - mpn
-  - parent_product_id
+  - ean # gtin
+  - mpn # style

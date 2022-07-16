@@ -6,7 +6,8 @@ feed:
 
 id: model_number
 
-codes: {}
+codes:
+  custom_2: gtin
 
 column_map:
   product_name: product_name
@@ -29,6 +30,4 @@ filters:
 groupby: null
 
 code:
-  - merchant_product_id
-  - model_number
   - custom_2

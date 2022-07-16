@@ -6,7 +6,9 @@ feed:
 
 id: parent_product_id
 
-codes: {}
+codes:
+  ean: gtin
+  model_number: style
 
 column_map:
   product_name: product_name
@@ -29,8 +31,5 @@ filters:
 groupby: parent_product_id
 
 code:
-  - merchant_product_id
-  - model_number
-  - ean
-  - mpn
-  - parent_product_id
+  - model_number # style - mpn
+  - ean #gtin

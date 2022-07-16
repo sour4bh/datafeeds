@@ -1,0 +1,45 @@
+merchant: adidas
+
+feed:
+  url: https://feeds.performancehorizon.com/aisl3/1101l532/791b5c4afe8b4136acd51c89e28a5ed4.csv
+  compression: null
+
+id: 
+variant: mpn
+
+codes:
+  mpn: style
+  product_GTIN: gtin
+  merchant_product_id: ac
+
+column_map:
+  brand_name: brand
+  product_name: product_name
+  merchant_product_id: merchant_sku
+  description: description
+  product_short_description: short_description
+  custom_3: category
+  merchant_deep_link: merchant_deep_link
+  custom_1: age
+  Fashion:suitable_for: gender
+  Fashion:size: size
+  material: material
+  display_price: price
+  merchant_image_url: image_url
+  colour: color
+
+filters:
+  - col: category_name
+    include:
+      - Women's Footwear
+      - Men's Footwear
+  - col: custom_1
+    include: adult
+  - col: custom_3
+    exclude: Accessories
+
+groupby: null
+
+code:
+  - mpn #style
+  - merchant_product_id # allsole

@@ -30,6 +30,6 @@ filters:
 
 groupby: id
 
-code:
-  - merchant_product_id
-  - model_number
+# code:
+  # - merchant_product_id
+  # - model_number

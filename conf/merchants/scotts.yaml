@@ -8,6 +8,7 @@ id: model_number
 
 codes:
   mpn: gtin
+  model_number: jd
 
 column_map:
   product_name: product_name
@@ -31,6 +32,5 @@ filters:
 groupby: model_number
 
 code:
-  - merchant_product_id
-  - model_number
-  - mpn
+  - mpn # gtin - merchant_product_id
+  - model_number # matches with scotts model_number

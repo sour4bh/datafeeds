@@ -30,6 +30,5 @@ filters:
 groupby: id
 
 code:
-  - merchant_product_id
-  - model_number
-  - ean
+  - ean #merchant_product_id # - model_number # # gtin
+

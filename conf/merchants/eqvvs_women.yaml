@@ -7,7 +7,7 @@ feed:
 id: parent_product_id
 
 codes:
-  mpn: style_code
+  mpn: style
   product_GTIN: gtin
 
 column_map:
@@ -32,7 +32,5 @@ filters:
 groupby: parent_product_id
 
 code:
-  - merchant_product_id
   - mpn
-  - parent_product_id
   - product_GTIN

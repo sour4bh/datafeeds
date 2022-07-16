@@ -7,8 +7,9 @@ feed:
 id: parent_product_id
 
 codes:
-  mpn: style_code
+  mpn: style
   product_GTIN: gtin
+  parent_product_id: ac
 
 column_map:
   product_name: product_name
@@ -36,10 +37,6 @@ filters:
 groupby: parent_product_id
 
 code:
-  - merchant_product_id
-  - ean
-  - isbn
-  - upc
-  - mpn
-  - parent_product_id
-  - product_GTIN
+  - product_GTIN #gtin - ean - isbn - upc
+  - mpn # style
+  - parent_product_id # ac with allsole

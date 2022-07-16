@@ -7,7 +7,7 @@ feed:
 id: manufacturers_product_number
 
 codes:
-  manufacturers_product_number: style_code
+  manufacturers_product_number: style
   european_article_number: gtin
 
 column_map:
@@ -33,6 +33,5 @@ filters:
 groupby: manufacturers_product_number
 
 code:
-  - product_id
-  - european_article_number
+  - european_article_number #gtin
   - manufacturers_product_number

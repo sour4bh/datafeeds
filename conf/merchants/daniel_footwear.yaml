@@ -31,5 +31,5 @@ filters:
 groupby: id
 
 code:
-  - item_group_id
+  # - item_group_id
   - gtin

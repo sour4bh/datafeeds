@@ -6,7 +6,8 @@ feed:
 
 id: item_group_id
 
-codes: {}
+codes:
+  GTIN: gtin
 
 column_map:
   item_group_id: merchant_sku
@@ -27,8 +28,4 @@ filters:
 groupby: item_group_id
 
 code:
-  - item_group_id
-  - product_id
-  - GTIN
-  - EAN
-  - MPN
+  - GTIN # gtin - EAN - MPN

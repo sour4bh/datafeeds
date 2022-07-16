@@ -7,8 +7,9 @@ feed:
 id: merchant_product_id
 
 codes:
-  mpn: style_code
+  mpn: style
   product_GTIN: gtin
+  merchant_product_id: ac
 
 column_map:
   brand_name: brand
@@ -39,9 +40,5 @@ filters:
 groupby: null
 
 code:
-  - merchant_product_id
-  - ean
-  - isbn
-  - upc
-  - mpn
-  - product_GTIN
+  - mpn #style
+  - merchant_product_id # allsole

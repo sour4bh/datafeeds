@@ -7,8 +7,9 @@ feed:
 id: model_number
 
 codes:
-  model_number: style_code
+  model_number: style
   product_GTIN: gtin
+  mpn: sf
 
 column_map:
   product_name: product_name
@@ -31,8 +32,7 @@ filters:
 groupby: model_number
 
 code:
-  - merchant_product_id
-  - model_number
-  - ean
-  - mpn
-  - product_GTIN
+  # - merchant_product_id #gtin
+  - model_number # style
+  - mpn # -ean    # sevenstore
+  - product_GTIN #gtin

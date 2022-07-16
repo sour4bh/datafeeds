@@ -7,7 +7,7 @@ feed:
 id: manufacturers_product_number
 
 codes:
-  manufacturers_product_number: style_code
+  manufacturers_product_number: style
   european_article_number: gtin
 
 column_map:

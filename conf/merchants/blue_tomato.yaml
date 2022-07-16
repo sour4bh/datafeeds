@@ -34,7 +34,4 @@ filters:
 groupby: null
 
 code:
-  - merchant_product_id
-  - model_number
-  - ean
-  - product_GTIN
+  - product_GTIN #gtin - ean

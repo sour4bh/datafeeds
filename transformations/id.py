@@ -225,3 +225,6 @@ class IDRules:
             offer_id=prod_line_and_variant_extracted,
             merchant_name=self.merchant,
         )
+
+    def adidas(self, row):
+        return self.merchant + "." + row["Product ID"].split("-")[0]

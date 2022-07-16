@@ -7,7 +7,8 @@ feed:
 id: Product ID
 variant: mpn
 
-codes: {}
+codes:
+  EAN: gtin
 
 column_map:
   Product Name: product_name
@@ -34,6 +35,4 @@ filters:
 groupby: id
 
 code:
-  - Product ID
-  - EAN
-  - upc
+  - EAN #gtin

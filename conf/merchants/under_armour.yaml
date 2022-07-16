@@ -7,12 +7,13 @@ feed:
 id: merchant_deep_link
 variant: parent_product_id
 
-codes: {}
+codes:
+  product_GTIN: gtin
 
 column_map:
   product_name: product_name
   description: description
-  custom_7: category
+  product_type: category
   merchant_deep_link: merchant_deep_link
   display_price: price
   brand_name: brand
@@ -28,11 +29,10 @@ column_map:
 filters:
   - col: custom_7
     include: footwear
-  - col: custom_2
+  - col: custom_1
     include: Adult
 
 groupby: id
 
 code:
-  - parent_product_id
-  - product_GTIN
+  - product_GTIN #gtin

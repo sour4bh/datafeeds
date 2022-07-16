@@ -31,6 +31,4 @@ filters:
 groupby: custom_1
 
 code:
-  - merchant_product_id
-  - custom_1
   - ean

@@ -7,7 +7,7 @@ feed:
 id: manufacturers_product_number
 
 codes:
-  manufacturers_product_number: style_code
+  manufacturers_product_number: style
 
 column_map:
   product_name: product_name
@@ -27,5 +27,4 @@ filters:
 groupby: manufacturers_product_number
 
 code:
-  - product_id
-  - manufacturers_product_number
+  - manufacturers_product_number # style

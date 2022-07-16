@@ -4,7 +4,7 @@ feed:
   compression: gzip
 id: parent_product_id
 codes:
-  mpn: style_code
+  mpn: style
   ean: gtin
 column_map:
   product_name: product_name
@@ -16,7 +16,6 @@ column_map:
   Fashion:size: size
   parent_product_id: merchant_sku
   display_price: price
-  product_price_old: product_price_old
   merchant_image_url: image_url
 filters:
   col: category_name

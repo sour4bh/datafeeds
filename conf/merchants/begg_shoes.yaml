@@ -34,4 +34,4 @@ groupby: merchant_category_id
 
 code:
   - european_article_number
-  - merchant_category_id
+  # - merchant_category_id
